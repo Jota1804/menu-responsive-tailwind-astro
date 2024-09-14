@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<nav class="relative py-6 bg-gray-800">
+	  <nav class="fixed w-full py-6 bg-gray-800 z-10">
       <div class="container flex px-8 mx-auto xl:px-0 items-center">
         <div class="flex flex-grow items-center">
           <i class="text-white fa-brands fa-slack text-2xl lg:text-4xl"></i>
@@ -19,11 +19,13 @@ import Layout from '../layouts/Layout.astro';
               menu.classList.remove("hidden");
               hamburguer.classList.remove("fa-bars");
               hamburguer.classList.add("fa-xmark");
+              console.log("hola mundo");
             }
             else{
               menu.classList.add("hidden")
               hamburguer.classList.add("fa-bars");
               hamburguer.classList.remove("fa-xmark");
+              console.log("hola mundo");
             }'></i>
         </div>
 
@@ -49,6 +51,38 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
     </nav>
+
+    <section class="z-0 relative w-screen h-screen flex flex-col justify-center items-center">
+      
+      <div class="flex flex-col justify-evenly items-center w-full h-full pt-12 lg:gap-20 lg:justify-center">
+
+        <p class="text-lg  md:text-xl font-medium text-slate-800 text-center">Por la educacion que quieres</p>
+
+        <h1 class="text-orange-500 text-3xl md:text-4xl lg:text-6xl font-bold text-center">ACADEMIA DE CURSOS</h1>
+
+        <p class="text-sm md:text-base w-11/12 lg:w-1/2 text-slate-800 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit error consequuntur beatae eligendi suscipit aliquam repellat vero vitae dolorum? Quod saepe provident</p>
+
+        <a
+          href="#"
+          class="border bg-blue-500 border-blue-500 hover:bg-blue-700 hover:border-blue-700 flex items-center cursor-pointer transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-white shadow-button hover:shadow-button-hover hover:scale-110 px-5 py-3 font-bold rounded-full"
+          >Get started</a
+        >
+
+        <div class="hidden lg:absolute mx-auto my-auto bottom-10">
+          <p class="text-5xl">...</p>
+        </div>
+
+          <img class="lg:absolute left-5 bottom-10 w-4/12 md:w-3/12 lg:w-3/12" src="uno.svg" alt="svg">
+
+          <img class="lg:absolute right-5 bottom-10 w-4/12 md:w-3/12 lg:w-3/12" src="dos.svg" alt="svg">
+
+
+
+
+      </div>
+
+    </section>
+
 
 </Layout>
 
