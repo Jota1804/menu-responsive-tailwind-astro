@@ -15,7 +15,7 @@ import Principal2 from '../components/Principal2.astro';
 
   <div class="w-full h-screen">
 
-    <section class="z-0 relative w-full h-screen flex flex-col justify-evenly items-center pt-16 lg:pt-20">
+    <section class="min-h-screen h-auto flex flex-col pt-28 justify-center items-center">
       <Principal2/>
     </section>
 
@@ -23,22 +23,20 @@ import Principal2 from '../components/Principal2.astro';
       <About/>
     </section>
 
-    <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-center text-white w-full mt-20 py-10 rounded-md mx-auto">
-      <CTA/>
-    </section>
-
     <section class="w-full h-screen flex items-center justify-center bg-slate-100">
       <Cards/>
+    </section>
+
+    <section class="px-4">
+      <CTA/>
     </section>
 
     <section class="z-0 relative w-full h-screen flex justify-center items-center">
       <Last/>
     </section>
 
-    <footer class="py-10">
-
+    <footer class="bg-gray-900 p-10 font-[sans-serif] tracking-wide">
       <Footer/>
-      
     </footer>
 
   </div>
